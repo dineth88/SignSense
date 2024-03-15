@@ -1,6 +1,7 @@
 # SignSence
 Gesture Recognition System in HCI
 
+
 How to install locally on your PC for development
 Prerequisites:
 Git for Windows.
@@ -8,6 +9,7 @@ GitHub for desktop.
 Visual Studio Code
 Create a development workspace:
 Sign into your account on GitHub desktop.
+
 
 Download the code as zip file.
 
@@ -22,6 +24,8 @@ Now open VS Code terminal and run command npm install to install required develo
 After installing packages, run command npm run dev to start local server.
 
 Click on the '➜ Local: http://localhost:5173/' to open the web app on browser.
+
+
 
 Project Plan: SignSense Gesture Recognition System
 
