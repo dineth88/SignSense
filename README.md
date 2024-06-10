@@ -36,4 +36,3 @@ This repository contains the following contents.
 └─utils
     └─cvfpscalc.py
 </pre>
-
