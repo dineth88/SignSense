@@ -393,3 +393,22 @@ def sinhala_sign_language_translator_application():
                     gesture_recognizer.save_image_as_training_data(captured_image, gesture_name,
                                                                    TRAINING_DATA_FILE_PATH)
                     print("The data was successfully registered.")
+    # Set threads
+    show_camera_feed_thread = threading.Thread(target=show_camera_feed)
+    handle_user_input_thread = threading.Thread(target=handle_user_input)
+
+    # Start the threads
+    show_camera_feed_thread.start()
+    handle_user_input_thread.start()
+
+    # Join the threads to the main thread
+    show_camera_feed_thread.join()
+    handle_user_input_thread.join()
+
+def run_sinhala_sign_language_translator():
+    try:
+        threading.Thread(target=sinhala_sign_language_translator_application).start()
+        root.destroy()  # Close the Tkinter window
+    except Exception as e:
+        messagebox.showerror("Error", f"Failed to run Sinhala Sign Language Translator application:\n{e}")
+     
