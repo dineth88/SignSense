@@ -211,3 +211,185 @@ def sinhala_sign_language_translator_application():
                 if gesture_name == "":
                     match, message = gesture_recognizer.recognize_gesture_in_image(captured_image,
                                                                                    TRAINING_DATA_FILE_PATH)
+                    if match == "a":
+                        print("Match: මම")
+                        print(f"Message: {message}")
+                    elif match == "One":
+                        print("Match: ඔබට")
+                        print(f"Message: {message}")
+                    elif match == "Two":
+                        print("Match: මට")
+                        print(f"Message: {message}")
+                    elif match == "b":
+                        print("Match: ආයුබෝවන්")
+                        print(f"Message: {message}")
+                    elif match == "c":
+                        print("Match: ස්තූතියි")
+                        print(f"Message: {message}")
+                    elif match == "d":
+                        print("Match: බඩගිනියි")
+                        print(f"Message: {message}")
+                    elif match == "e":
+                        print("Match: කොහොමද")
+                        print(f"Message: {message}")
+                    elif match == "f":
+                        print("Match: හොදින්")
+                        print(f"Message: {message}")
+                    elif match == "g":
+                        print("Match: එහෙමද")
+                        print(f"Message: {message}")
+                    elif match == "h":
+                        print("Match: ඔව්")
+                        print(f"Message: {message}")
+                    elif match == "i":
+                        print("Match: නෑ")
+                        print(f"Message: {message}")
+                    elif match == "j":
+                        print("Match: එපා")
+                        print(f"Message: {message}")
+                    elif match == "k":
+                        print("Match: ඕනේ")
+                        print(f"Message: {message}")
+                    elif match == "l":
+                        print("Match: එල")
+                        print(f"Message: {message}")
+                    elif match == "m":
+                        print("Match: තිබහයි")
+                        print(f"Message: {message}")
+                    elif match == "n":
+                        print("Match: ඇයි")
+                        print(f"Message: {message}")
+                    elif match == "o":
+                        print("Match: බෑ")
+                        print(f"Message: {message}")
+                    elif match == "p":
+                        print("Match: ගියා")
+                        print(f"Message: {message}")
+                    elif match == "q":
+                        print("Match: කනවා")
+                        print(f"Message: {message}")
+                    elif match == "q":
+                        print("Match: කනවා")
+                        print(f"Message: {message}")
+                    elif match == "r":
+                        print("Match: හා")
+                        print(f"Message: {message}")
+                    elif match == "s":
+                        print("Match: එනවා")
+                        print(f"Message: {message}")
+                    elif match == "t":
+                        print("Match: බොනවා")
+                        print(f"Message: {message}")
+                    elif match == "u":
+                        print("Match: කියන්න")
+                        print(f"Message: {message}")
+                    elif match == "v":
+                        print("Match: අයියෝ")
+                        print(f"Message: {message}")
+                    elif match == "w":
+                        print("Match: සුපිරි")
+                        print(f"Message: {message}")
+                    elif match == "x":
+                        print("Match: ගැම්මක්")
+                        print(f"Message: {message}")
+                    elif match == "y":
+                        print("Match: කොහෙද")
+                        print(f"Message: {message}")
+                    elif match == "z":
+                        print("Match: අපි")
+                        print(f"Message: {message}")
+                    elif match == "aa":
+                        print("Match: පැන්සල")
+                        print(f"Message: {message}")
+                    elif match == "ab":
+                        print("Match: කීයද")
+                        print(f"Message: {message}")
+                    elif match == "ac":
+                        print("Match: සමාවෙන්න")
+                        print(f"Message: {message}")
+                    elif match == "ad":
+                        print("Match: මොකද්ද")
+                        print(f"Message: {message}")
+                    elif match == "ae":
+                        print("Match: හදිස්සි")
+                        print(f"Message: {message}")
+                    elif match == "af":
+                        print("Match: සල්ලි")
+                        print(f"Message: {message}")
+                    elif match == "ag":
+                        print("Match: ආදරෙයි")
+                        print(f"Message: {message}")
+                    elif match == "ah":
+                        print("Match: ගස්")
+                        print(f"Message: {message}")
+                    elif match == "ai":
+                        print("Match: පෑන")
+                        print(f"Message: {message}")
+                    elif match == "aj":
+                        print("Match: පාසල")
+                        print(f"Message: {message}")
+                    elif match == "ak":
+                        print("Match: විශ්වවිද්‍යාලය")
+                        print(f"Message: {message}")
+                    elif match == "al":
+                        print("Match: ගල")
+                        print(f"Message: {message}")
+                    elif match == "am":
+                        print("Match: අම්මා ")
+                        print(f"Message: {message}")
+                    elif match == "an":
+                        print("Match: තාත්තා")
+                        print(f"Message: {message}")
+                    elif match == "ao":
+                        print("Match: අයියා")
+                        print(f"Message: {message}")
+                    elif match == "ap":
+                        print("Match: අක්කා")
+                        print(f"Message: {message}")
+                    elif match == "aq":
+                        print("Match: කම්මැලී")
+                        print(f"Message: {message}")
+                    elif match == "ar":
+                        print("Match: තියනවා")
+                        print(f"Message: {message}")
+                    elif match == "as":
+                        print("Match: යාලුවෝ")
+                        print(f"Message: {message}")
+                    elif match == "at":
+                        print("Match: ගින්දර")
+                        print(f"Message: {message}")
+                    elif match == "au":
+                        print("Match: දුවනවා")
+                        print(f"Message: {message}")
+                    elif match == "av":
+                        print("Match: කාමරය")
+                        print(f"Message: {message}")
+                    elif match == "aw":
+                        print("Match: ඔහුට")
+                        print(f"Message: {message}")
+                    elif match == "ax":
+                        print("Match: උඩට")
+                        print(f"Message: {message}")
+                    elif match == "ay":
+                        print("Match: වැස්ස")
+                        print(f"Message: {message}")
+                    elif match == "az":
+                        print("Match: පියබා")
+                        print(f"Message: {message}")
+                    elif match == "ba":
+                        print("Match: මල්")
+                        print(f"Message: {message}")
+                    elif match == "bb":
+                        print("Match: තුවක්කුව")
+                        print(f"Message: {message}")
+                    elif match == "bc":
+                        print("Match: පොඩි")
+                        print(f"Message: {message}")
+                    else:
+                        print(f"Match: {match}")
+                        print(f"Message: {message}")
+                # If a name was provided, save the gesture to the training file
+                else:
+                    gesture_recognizer.save_image_as_training_data(captured_image, gesture_name,
+                                                                   TRAINING_DATA_FILE_PATH)
+                    print("The data was successfully registered.")
