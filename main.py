@@ -412,3 +412,8 @@ def run_sinhala_sign_language_translator():
     except Exception as e:
         messagebox.showerror("Error", f"Failed to run Sinhala Sign Language Translator application:\n{e}")
      
+# Sinhala Sign Language Translator
+ssl_label = tk.Label(frame, text="Sinhala Sign Language Translator", font=("Helvetica", 24), bg="white")
+ssl_label.grid(row=2, column=0, pady=10, padx=10)
+ssl_button = tk.Button(frame, text="Run", command=run_sinhala_sign_language_translator, font=("Helvetica", 24), bg="black", fg="white")
+ssl_button.grid(row=2, column=1, pady=10, padx=10)
