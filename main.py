@@ -412,8 +412,29 @@ def run_sinhala_sign_language_translator():
     except Exception as e:
         messagebox.showerror("Error", f"Failed to run Sinhala Sign Language Translator application:\n{e}")
      
+# Create the main window
+root = tk.Tk()
+root.title("SignSense")
+root.attributes("-fullscreen", True)  # Fullscreen mode
+
+# Set the background image
+background_image = tk.PhotoImage(file="Img/WhatsApp Image 2024-06-09 at 00.53.16_d336f6db.png")
+background_label = tk.Label(root, image=background_image)
+background_label.place(relwidth=1, relheight=1)
+
+# Create a frame for the text and buttons
+frame = tk.Frame(root, bg='white', bd=5)
+frame.place(relx=0.5, rely=0.5, anchor='center')
+
+# Title
+title = tk.Label(frame, text="Gesture Recognition System", font=("Helvetica", 22, "bold"), bg="white")
+title.grid(row=0, column=0, columnspan=2, pady=20)
+    
 # Sinhala Sign Language Translator
 ssl_label = tk.Label(frame, text="Sinhala Sign Language Translator", font=("Helvetica", 24), bg="white")
 ssl_label.grid(row=2, column=0, pady=10, padx=10)
 ssl_button = tk.Button(frame, text="Run", command=run_sinhala_sign_language_translator, font=("Helvetica", 24), bg="black", fg="white")
 ssl_button.grid(row=2, column=1, pady=10, padx=10)
+
+# Start the main loop
+root.mainloop()
