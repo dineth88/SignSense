@@ -21,32 +21,24 @@ This repository contains the following contents.
 * First extract all the file to your local machine.
 * Install all the requirements from the list.
 * For virtual_mouse and sinhala_sign_language application, you need to run main.py.
+
+dataset :- Signs
+
 * For english_sign_laguage application you need to train "english_sign_language_translator/Train_YOLONAS_Custom_Dataset_Sign_Language_Complete.ipynb" model using google colab and embed the ckpt_best.path file created in that model to the directory english_sign_language_translator/model_weights and copy the absolute path to english_sign_language_translator/main.py.
 
 dataset :- https://public.roboflow.com/object-detection/american-sign-language-letters
 
-
 # Directory
 <pre>
-│  app.py
-│  keypoint_classification.ipynb
-│  point_history_classification.ipynb
+├─main.py
+│    
+├─requirements.txt
 │  
-├─model
-│  ├─keypoint_classifier
-│  │  │  keypoint.csv
-│  │  │  keypoint_classifier.hdf5
-│  │  │  keypoint_classifier.py
-│  │  │  keypoint_classifier.tflite
-│  │  └─ keypoint_classifier_label.csv
-│  │          
-│  └─point_history_classifier
-│      │  point_history.csv
-│      │  point_history_classifier.hdf5
-│      │  point_history_classifier.py
-│      │  point_history_classifier.tflite
-│      └─ point_history_classifier_label.csv
+├─english_sign_language_translator
+│  ├─Train_YOLONAS_Custom_Dataset_Sign_Language_Complete.ipynb
+│  │_requirements.txt          
+│  └─main.py
 │          
-└─utils
-    └─cvfpscalc.py
+├─sinhala_sign_language_translator
+  ├─data.json
 </pre>
