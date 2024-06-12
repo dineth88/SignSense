@@ -455,6 +455,15 @@ def sinhala_sign_language_translator_application():
     show_camera_feed_thread.join()
     handle_user_input_thread.join()
 
+# Function to run the main.py file of Virtual Mouse application
+def run_virtual_mouse():
+    try:
+        # Run the virtual mouse application in a separate thread
+        threading.Thread(target=virtual_mouse_application).start()
+        root.destroy()  # Close the Tkinter window
+    except Exception as e:
+        messagebox.showerror("Error", f"Failed to run Virtual Mouse application:\n{e}")
+
 def run_sinhala_sign_language_translator():
     try:
         threading.Thread(target=sinhala_sign_language_translator_application).start()
