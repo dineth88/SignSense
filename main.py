@@ -1,8 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-import subprocess
-import sys
-import os
 import threading
 import cv2
 import mediapipe as mp
