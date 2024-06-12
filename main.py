@@ -6,7 +6,6 @@ import os
 import threading
 import cv2
 import mediapipe as mp
-import mediapipe
 import pyautogui
 import json
 import fastdtw
@@ -72,8 +71,8 @@ def sinhala_sign_language_translator_application():
     class GestureRecognizer:
         def init(self, detection_confidence, tracking_confidence):
             # Define the mediapipe utilities for hands and drawing utilities
-            self.mediapipe_hands = mediapipe.solutions.hands
-            self.mediapipe_draw = mediapipe.solutions.drawing_utils
+            self.mediapipe_hands = mp.solutions.hands
+            self.mediapipe_draw = mp.solutions.drawing_utils
             # Define a single mediapipe hand and provide the detection and tracking confidence specified
             self.hands = self.mediapipe_hands.Hands(max_num_hands=1, min_detection_confidence=detection_confidence,
                                                     min_tracking_confidence=tracking_confidence)
