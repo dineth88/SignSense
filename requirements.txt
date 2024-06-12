@@ -1,0 +1,6 @@
+threading
+tkinter
+medidapipe
+pyautogui
+json
+fastdtw
